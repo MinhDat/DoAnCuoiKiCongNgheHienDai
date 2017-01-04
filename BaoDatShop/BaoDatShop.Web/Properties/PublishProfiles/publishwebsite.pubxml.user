@@ -93,6 +93,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="app/components/login/loginView.html">
       <publishTime>01/01/2017 03:23:34</publishTime>
     </File>
+    <File Include="app/components/products/all.js">
+      <publishTime>01/04/2017 22:59:33</publishTime>
+    </File>
     <File Include="app/components/products/productAddController.js">
       <publishTime>01/01/2017 03:23:34</publishTime>
     </File>
@@ -344,6 +347,9 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     </File>
     <File Include="Assets/admin/img/user8-128x128.jpg">
       <publishTime>01/01/2017 03:22:21</publishTime>
+    </File>
+    <File Include="Assets/admin/js/all.js">
+      <publishTime>01/04/2017 22:41:45</publishTime>
     </File>
     <File Include="Assets/admin/js/app.js">
       <publishTime>01/01/2017 03:22:21</publishTime>

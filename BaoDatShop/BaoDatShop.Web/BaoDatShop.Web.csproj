@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" />
@@ -250,6 +250,7 @@
     <Compile Include="Models\OrderDetailViewModel.cs" />
     <Compile Include="Models\OrderViewModel.cs" />
     <Compile Include="Models\PageViewModel.cs" />
+    <Compile Include="Models\Picture.cs" />
     <Compile Include="Models\PostCategoryViewModel.cs" />
     <Compile Include="Models\PostTagViewModel.cs" />
     <Compile Include="Models\PostViewModel.cs" />
@@ -372,6 +373,7 @@
     <Content Include="Assets\admin\img\user6-128x128.jpg" />
     <Content Include="Assets\admin\img\user7-128x128.jpg" />
     <Content Include="Assets\admin\img\user8-128x128.jpg" />
+    <Content Include="Assets\admin\js\all.js" />
     <Content Include="Assets\admin\js\app.js" />
     <Content Include="Assets\admin\js\app.min.js" />
     <Content Include="Assets\admin\js\demo.js" />
@@ -5016,7 +5018,10 @@
     <Content Include="Assets\admin\libs\toastr\toastr.js" />
     <Content Include="Assets\admin\libs\toastr\toastr.min.css" />
     <Content Include="Assets\admin\libs\toastr\toastr.min.js" />
+    <Content Include="Assets\client\css\bootstrap-theme.css" />
+    <Content Include="Assets\client\css\bootstrap-theme.min.css" />
     <Content Include="Assets\client\css\bootstrap.css" />
+    <Content Include="Assets\client\css\bootstrap.min.css" />
     <Content Include="Assets\client\css\custom.css" />
     <Content Include="Assets\client\css\etalage.css" />
     <Content Include="Assets\client\css\form.css" />
@@ -5025,6 +5030,7 @@
     <Content Include="Assets\client\font-awesome-4.6.3\css\font-awesome.min.css" />
     <Content Include="Assets\client\font-awesome-4.6.3\fonts\fontawesome-webfont.svg" />
     <Content Include="Assets\client\font-awesome-4.6.3\HELP-US-OUT.txt" />
+    <Content Include="Assets\client\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Assets\client\images\a-star.png" />
     <Content Include="Assets\client\images\arrow1.png" />
     <Content Include="Assets\client\images\arrow2.png" />
@@ -5077,6 +5083,8 @@
     <Content Include="Assets\client\images\wa.jpg" />
     <Content Include="Assets\client\images\wat.jpg" />
     <Content Include="Assets\client\images\zoom.png" />
+    <Content Include="Assets\client\js\bootstrap.js" />
+    <Content Include="Assets\client\js\bootstrap.min.js" />
     <Content Include="Assets\client\js\common.js" />
     <Content Include="Assets\client\js\controllers\contact.js" />
     <Content Include="Assets\client\js\controllers\shoppingCart.js" />
@@ -5084,6 +5092,7 @@
     <Content Include="Assets\client\js\jquery.flexisel.js" />
     <Content Include="Assets\client\js\jquery.min.js" />
     <Content Include="Assets\client\js\jquery.wmuSlider.js" />
+    <Content Include="Assets\client\js\npm.js" />
     <Content Include="Assets\client\template\contact_template.html" />
     <Content Include="Assets\client\template\newuser.html" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -5103,6 +5112,14 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Assets\client\css\bootstrap-theme.css.map" />
+    <Content Include="Assets\client\css\bootstrap-theme.min.css.map" />
+    <Content Include="Assets\client\css\bootstrap.css.map" />
+    <Content Include="Assets\client\css\bootstrap.min.css.map" />
+    <Content Include="Assets\client\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Assets\client\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Assets\client\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Assets\client\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Properties\PublishProfiles\publishwebsite.pubxml" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -5306,9 +5323,6 @@
     <Content Include="Assets\admin\libs\slimScroll\bower.json" />
     <Content Include="Assets\admin\libs\slimScroll\package.json" />
     <Content Include="Assets\admin\libs\slimScroll\README.md" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Resources\AdminLTE-2.3.0.zip" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\admin\libs\toastr\.bower.json" />
