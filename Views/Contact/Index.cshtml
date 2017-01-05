@@ -2,6 +2,9 @@
 @using BotDetect.Web.Mvc;
 @{
     ViewBag.Title = "Liên hệ";
+    ViewBag.MetaKeyword = "liên hệ";
+    ViewBag.MetaDescription = "Thông tin liên hệ của BAODAT SHOP";
+
     Layout = "~/Views/Shared/Layouts.cshtml";
 }
 @section footerJS{
@@ -10,7 +13,7 @@
 }
 <style>
   #map {
-    height: 400px;
+    height: 100%;
   }
 </style>
 <link href="@BotDetect.Web.CaptchaUrls.Absolute.LayoutStyleSheetUrl" rel="stylesheet" type="text/css" />

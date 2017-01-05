@@ -39,21 +39,13 @@
                 console.log('Cannot get list parent');
             });
         }
-
-        $scope.readFile = function(input) {
-            if (input.files && input.files[0]) {
-                console.log("CODE FILE HERE:");
-                console.log(input.files[0]);
-            }
-        }
-
         $scope.ChooseImage = function () {
             cloudinary.openUploadWidget({ cloud_name: 'hcmus-edu', upload_preset: 'pczoogcr' },
               function (error, result) {
                   $scope.$apply(function () {
                       $scope.product.Image = result[0].url;
                   })
-            });
+              });
         }
 
         $scope.moreImages = [];
