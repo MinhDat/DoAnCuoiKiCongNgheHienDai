@@ -10,7 +10,7 @@
           <li>
               @if (childCategories.Count() > 0)
               {
-                  var htmlString = new HtmlString("<img class=\"arrow-img\" src=\"/Assets/client/images/arrow1.png\" alt=\"\" />");
+                  var htmlString = new HtmlString("<img style=\"float: right; margin: 20px 15px 20px 15px;\" class=\"arrow-img\" src=\"/Assets/client/images/arrow1.png\" alt=\"\" />");
                   <a href="@url">@category.Name @htmlString</a>
                       <ul>
                           @foreach (var childCategory in childCategories)
